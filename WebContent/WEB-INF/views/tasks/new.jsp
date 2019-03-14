@@ -6,6 +6,7 @@
 
         <form method="POST" action="<c:url value='/create' />">
             <c:import url="../layout/_form.jsp" />
+        <button type="submit">作成</button>
         </form>
 
         <p><a href="<c:url value='/index' />" >タスク一覧に戻る</a></p>

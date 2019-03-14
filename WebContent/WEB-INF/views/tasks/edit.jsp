@@ -9,13 +9,11 @@
 
 				<form method="POST" action="<c:url value='/update' />">
 					<c:import url="../layout/_form.jsp" />
+				<button type="submit">更新</button>
 				</form>
+                <br />
 
-				<p>
-					<a href="<c:url value='/index' />">タスク一覧に戻る</a>
-				<p>
-					<a href="#" onclick="confirmDestroy();">このタスクを削除する</a>
-				</p>
+				<a href="#" onclick="confirmDestroy();">このタスクを削除する</a>
 				<form method="POST" action="<c:url value='/destroy' />">
 					<input type="hidden" name="_token" value="${_token}" />
 				</form>
@@ -26,6 +24,8 @@
 						}
 					}
 				</script>
+
+				<p><a href="<c:url value='/index' />">タスク一覧に戻る</a></p>
 			</c:when>
 			<c:otherwise>
 				<h2>お探しのデータは見つかりませんでした。</h2>

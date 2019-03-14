@@ -28,10 +28,8 @@
 					</tbody>
 				</table>
 
-				<p>
-					<a href="<c:url value='/index' />">タスク一覧に戻る</a>
-				<p>
 					<a href="<c:url value='/edit?id=${task.id}' />">このタスクを編集する</a>
+			        <p><a href="<c:url value='/index' />">タスク一覧に戻る</a></p>
 			</c:when>
 			<c:otherwise>
 				<h2>お探しのデータは見つかりませんでした。</h2>
